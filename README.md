@@ -6,18 +6,23 @@ For the `midi2rdf` converter, see [the project page](https://github.com/midi-ld/
 
 ## Table of Contents
 
-1. Introduction
-2. Conversion tools
-3. Using the data
-4. Tutorials
-5. FAQ
+1. [Introduction](#introduction)
+2. [Conversion tools](#tools)
+3. [Using the data](#usage)
+4. [Tutorials](#tutorials)
+5. [FAQ](#faq)
 
 ### Introduction
+<a name="introduction"></a>
 
 ### Conversion tools
+<a name="tools"></a>
 
 ### Using the data
+<a name="usage"></a>
 
 ### Tutorials
+<a name="tutorials"></a>
 
 ### FAQ
+<a name="faq"></a>
