@@ -50,5 +50,20 @@ When you query the SPARQL endpiont, you'll find this diagram useful:
 ### Tutorials
 <a name="tutorials"></a>
 
+These tutorials (and more to come) will help you get your way around MIDI Linked Data.
+
+- Tutorial on how to use [midi2rdf](https://github.com/midi-ld/midi2rdf) to convert your MIDI files to RDF (and back to MIDI)
+- Tutorial on streaming your analog instrument output as MIDI Linked Data
+- Tutorial on querying the MIDI Linked Data Cloud using SPARQL
+
 ### FAQ
 <a name="faq"></a>
+
+- **Q.** Do you support other formats than MIDI?
+- **A.** This work is specifically tailored for MIDI. If you're looking for similar projects on other formats, like MusicXML, look [here](http://www.ontologydesignpatterns.org/ont/musicml/musicml.owl) and [here](http://www.ontologydesignpatterns.org/ont/musicml/confirmation.ttl).
+- **Q.** Help! My queries have stopped working.
+- **A.** Although we're working with a reasonably stable data model, we're constantly fixing bugs and generating new and improved versions of the MIDI Linked Data Cloud dataset. This has (and will) marginally affect this data model, eventually changing some URI naming schemes (e.g. "patterns" will soon be renamed into "pieces"; blame the musicologists!). We'll keep the documentation consistent with the most up-to-date version of the dataset, so please refer to it if something doesn't work (and, of course, your [bug reports](https://github.com/midi-ld/documentation/issues) will be very welcome!)
+- **Q.** Help! URIs that use to work don't anymore.
+- **A.** See previous answer.
+- **Q.** I want to communicate something that doesn't fit your issue trackers.
+- **A.** Drop us an [email](mailto:albert.meronyo@gmail.com)!
