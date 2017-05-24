@@ -9,11 +9,9 @@ For the `midi2rdf` converter, see [the project page](https://github.com/midi-ld/
 1. [Introduction](#introduction)
 2. [The MIDI Linked Data Cloud](#tools)
 3. [Using the data](#usage)
-  * Dumps
-  * SPARQL
-  * API
 4. [Tutorials](#tutorials)
-5. [FAQ](#faq)
+5. [Changelog](#changelog)
+6. [FAQ](#faq)
 
 ### Introduction
 <a name="introduction"></a>
@@ -38,23 +36,55 @@ The data in the MIDI Linked Data Cloud can be accessed in different ways:
 
 #### Dumps
 
+Dumps are just big compressed files with the whole contents of the MIDI Linked Data Cloud. All releases are available at the [archive](http://midi-ld.amp.ops.labs.vu.nl/). The symbolic link [latest/](http://midi-ld.amp.ops.labs.vu.nl/latest) always points to the most recent version. The documentation (tutorials, etc.) always refers to this version. All releases contain a change log (the latest is also pasted [below](#changelog))
+
 #### SPARQL
 
-When you query the SPARQL endpiont, you'll find this diagram useful:
+SPARQL is the query language of Linked Data. If you're comfortable with it, you'll be able to combine bits from different MIDI sources and do real awesomeness. If you can't speak SPARQL, you can get started [here](https://www.w3.org/TR/rdf-sparql-query/) or, even better, reading Bob DuCharme's excellent [Learning SPARQL](http://www.learningsparql.com/).
+
+Useful queries for exploring and getting data out of the dataset are available in the [query repository](https://github.com/midi-ld/queries). You can just copy paste them and try them out in our [SPARQL endpoint](http://virtuoso-midi.amp.ops.labs.vu.nl/sparql).
+
+When querying the SPARQL endpiont, you'll find this diagram useful:
 
 <img src='img/midi-ld.png' style='vertical-align: center;'>
 
+A complete walkthrough, with lots of example SPARQL queries, is available in [this tutorial](tutorials/sparql.md)
 
 #### API
+
+We use the convenient system [grlc](http://grlc.io/) to generate a [RESTful API](http://grlc.io/api/midi-ld/queries) on top of the SPARQL queries in the [query repository](https://github.com/midi-ld/queries). You'll find this useful if you have a consuming application that needs to access data in the MIDI Linked Data Cloud, but you don't want to couple with SPARQL libraries (take a look at [grlc's repo](https://github.com/clariah/grlc/) for more info).
 
 ### Tutorials
 <a name="tutorials"></a>
 
 These tutorials (and more to come) will help you get your way around MIDI Linked Data.
 
+- [Tutorial](tutorials/search.md) on how to search and browse the MIDI Linked Data Cloud
 - Tutorial on how to use [midi2rdf](https://github.com/midi-ld/midi2rdf) to convert your MIDI files to RDF (and back to MIDI)
 - Tutorial on streaming your analog instrument output as MIDI Linked Data
-- Tutorial on querying the MIDI Linked Data Cloud using SPARQL
+- [Tutorial](tutorials/sparql.md) on querying the MIDI Linked Data Cloud using SPARQL
+
+### Changelog
+
+**Version 1.2**
+
+- Added the MySongBook and Lakh datasets (see https://github.com/midi-ld/sources), increasing the piece count to 308,442
+- Changed mid:Pattern into midi:Piece
+- Bug fixes, documentation update
+
+**Version 1.1**
+
+- Added processing of CopyrightMetaEvent, MarkerEvent
+- Joined together LyricsEvent strings into one single mid:lyrics label (for MIDI patterns that have them: 8,391 out of 113 565)
+- Updated separate file for all sorts of labels/strings in the dataset (TrackNameEvent, TextMetaEvent, LyricsEvent, CopyrightMetaEvent, MarkerEvent)
+- Bug fixes
+- Updated documentation
+
+**Version 1.0**
+
+- Added processing of LyricsEvent
+- Added links to vocabulary concepts Note and Program (see https://raw.githubusercontent.com/MIDIpedia/midi2rdf/master/midi-ld.ttl)
+- Minor fixes
 
 ### FAQ
 <a name="faq"></a>
