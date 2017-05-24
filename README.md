@@ -48,7 +48,7 @@ When querying the SPARQL endpiont, you'll find this diagram useful:
 
 <img src='img/midi-ld.png' style='vertical-align: center;'>
 
-A complete walkthrough, with lots of example SPARQL queries, is available in [this tutorial](tutorials/sparql.md)
+A complete walkthrough, with lots of example SPARQL queries, is available in [this tutorial](tutorials/sparql.md).
 
 #### API
 
@@ -60,9 +60,9 @@ We use the convenient system [grlc](http://grlc.io/) to generate a [RESTful API]
 These tutorials (and more to come) will help you get your way around MIDI Linked Data.
 
 - [Tutorial](tutorials/search.md) on how to search and browse the MIDI Linked Data Cloud
-- Tutorial on how to use [midi2rdf](https://github.com/midi-ld/midi2rdf) to convert your MIDI files to RDF (and back to MIDI)
-- Tutorial on streaming your analog instrument output as MIDI Linked Data
 - [Tutorial](tutorials/sparql.md) on querying the MIDI Linked Data Cloud using SPARQL
+- Tutorial on how to use [midi2rdf](https://github.com/midi-ld/midi2rdf) to convert your MIDI files to RDF (and back to MIDI) (coming soon, check out [this](https://github.com/midi-ld/midi2rdf) and [this](https://www.albertmeronyo.org/wp-content/uploads/2016/04/ESWC2016_PD_paper_57.pdf) meanwhile)
+- Tutorial on streaming your analog instrument output as MIDI Linked Data (coming soon, check out [this](https://github.com/midi-ld/midi2rdf) and [this](https://www.albertmeronyo.org/wp-content/uploads/2016/04/ESWC2016_PD_paper_57.pdf) meanwhile)
 
 ### Changelog
 
