@@ -27,6 +27,8 @@ Pieces (patterns) have interesting information to query on.
 4. Filtering over these properties is easy. Query 6 shows how to query specifically for MIDI pieces of format 1 with a resolution higher than 400.
 5. All tracks in a piece are linked from it. For example, query 7 shows how to get the count of tracks per piece, and query 8 shows how to get them listed.
 
+**Important**. In general it's a good idea to use the filtering patterns in these previous examples in all the following queries, and whenever you query the SPARQL endpoint. Especially, when you query for track/event data. If you do so without constraining the search, the endpoint could take a *long* time to give the results back ot you (or fail to do so after a long waiting time). You'll also make it friendlier for others using these resources. Thanks!
+
 
 ## Querying track data
 
