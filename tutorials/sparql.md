@@ -59,7 +59,7 @@ PREFIX midi: &lt;http://purl.org/midi-ld/midi#&gt;
 
 SELECT ?filename ?pattern WHERE {
   ?pattern prov:wasDerivedFrom ?filename .
-  ?pattern mid:lyrics ?lyrics .
+  ?pattern midi:lyrics ?lyrics .
   FILTER (regex(?lyrics, "stairway", "i"))
 }
 </pre>
